@@ -16,6 +16,11 @@ h1 {
     font-size: 2.3rem;
     margin-bottom: 25px;
     color: #000000;
+    
+}
+h1:hover {
+    color: rgba(0, 255, 255, 0.499);
+    
 }
 
 h4{
@@ -24,5 +29,28 @@ h4{
     color: rgba(107, 138, 165, 0.825);
     margin-bottom: 30px;
     margin-top: 0%;
-    
+
+}
+
+form {
+    max-width: 900px;
+    margin: auto;
+    background: #f3f4f6;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #e5e7eb;
+    font-size: 0.95rem;
+    transition: 1s;
 }
