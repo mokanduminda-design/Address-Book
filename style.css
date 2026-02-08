@@ -5,3 +5,24 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+body {
+    background: #cfd6e6;
+    padding: 40px 20px;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+h4{
+    text-align: center;
+    font-size: smaller;
+    color: rgba(107, 138, 165, 0.825);
+    margin-bottom: 30px;
+    margin-top: 0%;
+    
+}
