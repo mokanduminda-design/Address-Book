@@ -110,3 +110,44 @@ button:hover {
     opacity: 1;
 }
 
+.place-card {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    background: #f3f4f6;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left;
+}
+
+.place-card h3 {
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.place-card p {
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.place-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.place-card button {
+    float: right;
+    background: #ef4444;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.place-card button:hover {
+    background: #b91c1c;
+}
