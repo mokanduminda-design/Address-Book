@@ -96,3 +96,29 @@ if (placeIds.length === 0) {
    return;
 }
 
+// Hide text when place is added
+emptyState.style.display = "none";
+list.innerHTML = "";
+
+// Display places
+placeIds.forEach(id => {
+
+        const place = myPlaces.places[id];
+
+        const card = document.createElement("div");
+        card.className = "place-card";
+
+        card.innerHTML = `
+            <h3>📍 ${place.location}</h3>
+            <p>${place.timeOfYear || ""}</p>
+            <button onclick="event.stopPropagation(); handleDeletePlace(${id})">
+                🗑️
+            </button>
+        `;
+
+        card.addEventListener("click", function() {
+            renderDetails(id);
+        });
+
+        list.appendChild(card);
+    });
