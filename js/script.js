@@ -90,6 +90,7 @@ function renderPlaces() {
 
 // Show empty text if list is 0
 if (placeIds.length === 0) {
+   emptyState.style.display = "block"
    list.innerHTML = "";
    return;
 }
@@ -142,3 +143,4 @@ placeIds.forEach(id => {
         <p>${place.notes}</p>
     `;
 }
+
