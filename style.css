@@ -165,3 +165,18 @@ button:hover {
 .place-card:hover {
     background: linear-gradient(transparent,#ffffffa4,transparent)
 }
+
+body {
+    animation: pageFade 2.0s ease;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
