@@ -1,5 +1,5 @@
 # 🗺️ Memoir of Travels ✨
-Link to live site: 
+Link to live site: https://mokanduminda-design.github.io/Address-Book/
 
 ## About the Project
 **Memoir of Travels** is a simple and interactive web application that lets you **log all the places you have visited** and **capture memories, landmarks, and personal notes** about each trip.  
