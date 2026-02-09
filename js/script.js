@@ -107,11 +107,13 @@ placeIds.forEach(id => {
         card.className = "place-card";
 
         card.innerHTML = `
+        <div  class="place-header">
             <h3>📍 ${place.location}</h3>
             <p>${place.timeOfYear || ""}</p>
             <button onclick="event.stopPropagation(); handleDeletePlace(${id})">
                 🗑️
             </button>
+        </div>
         `;
 
         card.addEventListener("click", function() {
