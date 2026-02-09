@@ -10,11 +10,16 @@ PlaceManager.prototype.assignId = function() {
     return this.currentId;
 };
 
-// Add the places to object
 PlaceManager.prototype.addPlace = function(place) {
-    place.id = this.assignId();
-    this.places[id] = place;
+    const id = this.assignId();   
+    place.id = id;                
+    this.places[id] = place;      
 };
+
+PlaceManager.prototype.getPlace = function(id) {
+    return this.places[id];
+};
+
 
 // Remove task
 PlaceManager.prototype.deletePlace = function(id) {
@@ -28,7 +33,7 @@ PlaceManager.prototype.deletePlace = function(id) {
   function Place(location, timeOfYear, landmarks, notes) {
     this.location = location;
     this.timeOfYear = timeOfYear;
-    this.landmarks = landmarks
+    this.landmarks = landmarks.split(",")
     this.notes = notes;
     this.id = null   // Given by generator
 }
@@ -68,3 +73,10 @@ const listEl = document.getElementById(`placesList`)
     notesIn.value = "";
 }
 
+function handleDeletePlace(id) {
+
+    if (confirm("Delete this place?")) {
+        myPlaces.deletePlace(id);
+        renderPlaces();
+    }
+}
