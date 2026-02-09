@@ -88,8 +88,6 @@ function renderPlaces() {
 
     const placeIds = Object.keys(myPlaces.places);
 
-}
-
 // Show empty text if list is 0
 if (placeIds.length === 0) {
    list.innerHTML = "";
@@ -122,3 +120,23 @@ placeIds.forEach(id => {
 
         list.appendChild(card);
     });
+}
+
+    function renderDetails(id) {
+
+    const place = myPlaces.getPlace(id);
+    const details = document.getElementById("details");
+
+    details.innerHTML = `
+        <h2>🌍 ${place.location}</h2>
+        <p><strong>Time:</strong> ${place.timeOfYear}</p>
+
+        <h3>🏛️ Landmarks</h3>
+        <ul>
+            ${place.landmarks.map(l => `<li>${l.trim()}</li>`).join("")}
+        </ul>
+
+        <h3>📝 Notes</h3>
+        <p>${place.notes}</p>
+    `;
+}
