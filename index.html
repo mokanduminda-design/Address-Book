@@ -17,15 +17,23 @@
     <input  type="text" id="landmarks" placeholder="Landmarks🏛️">
     <textarea name="Notes" id="notes" placeholder="Your thoughts,memeories,unforgetable experiences"></textarea>
     <br>
-    <button onclick="handleAddPlace()" class="button">Add Place</button>
+    <button type="button" onclick="handleAddPlace()" class="button">Add Place</button>
 </form>
 
 <!-- List of added places -->
- <div class="empty" id="placesList">
- <h2>🧭</h2>
- No places added yet. Start tracking your travels!
+<div id="placesContainer">
+
+    <!-- Empty State -->
+    <div class="empty" id="emptyState">
+        <h2>🧭</h2>
+        No places added yet. Start tracking your travels!
+    </div>
+
+    <!-- Places will render here -->
+    <div id="placesList"></div>
 
 </div>
+
 
 <!-- Details -->
 <div class="details" id="details">

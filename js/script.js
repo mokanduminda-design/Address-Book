@@ -80,3 +80,19 @@ function handleDeletePlace(id) {
         renderPlaces();
     }
 }
+
+function renderPlaces() {
+
+    const list = document.getElementById("placesList");
+    const emptyState = document.getElementById("emptyState");
+
+    const placeIds = Object.keys(myPlaces.places);
+
+}
+
+// Show empty text if list is 0
+if (placeIds.length === 0) {
+   list.innerHTML = "";
+   return;
+}
+
